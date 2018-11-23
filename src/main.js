@@ -4,7 +4,7 @@ import App from './App'
 import router from './router'
 // 按需引入mint ui的组件
 // 引入header组件
-import { Header ,Swipe, SwipeItem,Button } from 'mint-ui'
+import { Header ,Swipe, SwipeItem,Button ,Lazyload} from 'mint-ui'
 // 注册header组件
 Vue.component(Header.name, Header)
 // 注册mint_ui的轮播图组件
@@ -12,10 +12,14 @@ Vue.component(Swipe.name, Swipe);
 Vue.component(SwipeItem.name, SwipeItem);
 // 注册Button组件
 Vue.component(Button.name, Button)
+// 注册lazy load
+Vue.use(Lazyload);
 // 导入mui组件库样式
 import  "./lib/mui/css/mui.css"
 // 导入mui的图标组件库
 import  "./lib/mui/css/icons-extra.css"
+// 导入mui的js文件
+// import  "./lib/mui/js/mui.min.js"
 // 引入自己的css文件
 import "./css/common.css"
 // 导入vue-resource

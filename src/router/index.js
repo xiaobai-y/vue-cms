@@ -9,6 +9,7 @@ import searchComponent from '../pages/search/search.vue'
 import newListComponent from '../pages/newList/index.vue'
 import newInfoComponent from '../pages/newInfo/index.vue'
 import photoListComponent from '../pages/photoList/index.vue'
+import photoInfoComponent from '../pages/photoInfo/index.vue'
 // 注册路由
 Vue.use(Router)
 
@@ -46,7 +47,12 @@ export default new Router({
     {
       path:'/home/photoList',
       component:photoListComponent    
+    },
+    {
+      path:'/home/photoInfo/:id',
+      component:photoInfoComponent       
     }
   ],
   linkActiveClass:'mui-active'
+  
 })
