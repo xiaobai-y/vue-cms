@@ -10,6 +10,7 @@ import newListComponent from '../pages/newList/index.vue'
 import newInfoComponent from '../pages/newInfo/index.vue'
 import photoListComponent from '../pages/photoList/index.vue'
 import photoInfoComponent from '../pages/photoInfo/index.vue'
+import goodsListComponent from '../pages/goodslist/index.vue'
 // 注册路由
 Vue.use(Router)
 
@@ -51,6 +52,10 @@ export default new Router({
     {
       path:'/home/photoInfo/:id',
       component:photoInfoComponent       
+    },
+    {
+      path:'/home/goodslist',
+      component:goodsListComponent       
     }
   ],
   linkActiveClass:'mui-active'
